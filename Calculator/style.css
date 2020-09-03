@@ -1,0 +1,68 @@
+body{
+    background:linear-gradient(to left, #00ffff 0%, #99ff99 100%);
+}
+#calc{
+    width: 280px;
+    background:rgba(255, 255, 255, .50);
+    margin-top: 5%;
+    margin-left: 40%;
+    position: relative;
+    border-radius:10px;
+}
+#result{
+    height: 54px;
+    border-width: 5px;
+    background-color: black;
+    margin-top: 30px;
+    padding: 26px;
+    grid-column: 1 / -1;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    flex-direction:column;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+#result .history{
+    color:rgba(255, 255, 255, .50);
+    font-size: 1.5rem;
+    
+}
+#result .current{
+    color:white;
+    font-size: 2.5rem;
+}
+
+#keys{
+    height: 340px;
+    background-color:#003d4d;
+    
+}
+.digits,.operator,.equal,.clear,.delete{
+    height:57px;
+    width: 57px;
+    margin: 5px;
+    
+    border-width: 0ch;
+    font-weight:bold;
+    font-size: 20px;
+    background-color: #b3f0ff;
+    color: black;
+    cursor: pointer;
+}
+.clear{
+    float: left;
+    width: 46%;
+}
+.delete{
+    float: right;
+    width: 46%;
+}
+.digits:active ,.operator:active,.clear:active,.delete:active,.equal:active{
+ font-size: 15px;
+ background-color: black;
+ color:white
+}
+.digits:focus,.operator:focus,.clear:focus,.equal:focus,.delete:focus{
+    outline:0;
+}

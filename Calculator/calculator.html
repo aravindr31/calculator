@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator</title>
+</head>
+<body>
+        <div id="container">
+            <div id="calc">
+                <div id="result">
+                    <div class="history" ></div>
+                    <div class="current" ></div>
+                </div>
+                <div id="keys" >
+                    <button onclick="buttonclick(7)" class="digits" id=seven>7</button>
+                    <button onclick="buttonclick(8)" class="digits" id=eight>8</button>
+                    <button onclick="buttonclick(9)" class="digits" id=nine>9</button>
+                    <button onclick="operatorclick('/')" class="operator" id=divide>/</button>
+
+
+                    <button onclick="buttonclick(4)" class="digits" id=four>4</button>
+                    <button onclick="buttonclick(5)" class="digits" id=five>5</button>
+                    <button onclick="buttonclick(6)" class="digits" id=six>6</button>
+                    <button onclick="operatorclick('*')" class="operator" id=multiply>*</button>
+
+                    <button onclick="buttonclick(1)" class="digits" id=one>1</button>
+                    <button onclick="buttonclick(2)" class="digits" id=two>2</button>
+                    <button onclick="buttonclick(3)" class="digits" id=three>3</button>
+                    <button onclick="operatorclick('-')" class="operator" id=subtract>-</button>
+
+                    <button onclick="buttonclick(0)" class="digits" id=zero>0</button>
+                    <button onclick="buttonclick('.')" class="digits" id=dot>.</button>
+                    <button onclick="equalclick('')" class="equal" id=equal>=</button>
+                    <button onclick="operatorclick('+')" class="operator" id=add>+</button>
+
+                    <button onclick="clearDisplay()" class="clear" id="clear">C</button>
+                    <button onclick="deleteDisplay()" class="delete" id="delete"><</button>
+
+                </div>
+
+            </div>
+        </div>
+
+<script src="script.js"></script>
+</body>
+</html>
